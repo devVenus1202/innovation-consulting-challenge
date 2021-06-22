@@ -7,7 +7,7 @@ import { DomObjectService } from 'src/app/services/dom-object.service';
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent implements AfterViewInit {
-  @ViewChild('heroSection', {read: ElementRef, static:false }) heroSection: ElementRef;
+  @ViewChild('heroSection', { read: ElementRef, static: false }) heroSection: ElementRef;
   constructor(private domObjectService: DomObjectService) { }
 
   ngAfterViewInit() {

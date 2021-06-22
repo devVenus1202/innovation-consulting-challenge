@@ -5,6 +5,6 @@ import { ElementRef, Injectable } from '@angular/core';
 })
 export class DomObjectService {
   heroSection: ElementRef;
-  showStickyButton: boolean = false;
+  showStickyButton = false;
   constructor() { }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DomObjectService } from '../services/dom-object.service';
 
 @Component({
@@ -6,8 +6,8 @@ import { DomObjectService } from '../services/dom-object.service';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })
-export class LandingPageComponent implements OnInit {
-  isScrolling:boolean = false;
+export class LandingPageComponent implements OnInit, OnDestroy {
+  isScrolling = false;
   timeOutObject: any;
   constructor(private domObjectService: DomObjectService) { }
 
@@ -21,11 +21,10 @@ export class LandingPageComponent implements OnInit {
 
 
   heroSectionInViewPort() {
-    let headerSectionDom = this.domObjectService.heroSection.nativeElement
+    let headerSectionDom = this.domObjectService.heroSection.nativeElement;
     let top = headerSectionDom.offsetTop;
-    let height = headerSectionDom.offsetHeight;
-    
-    while(headerSectionDom.offsetParent) {
+    const height = headerSectionDom.offsetHeight;
+    while (headerSectionDom.offsetParent) {
       headerSectionDom = headerSectionDom.offsetParent;
       top += headerSectionDom.offsetTop;
     }
@@ -35,18 +34,17 @@ export class LandingPageComponent implements OnInit {
   scroll() {
     window.clearTimeout(this.timeOutObject);
     this.isScrolling = true;
-    this.timeOutObject = setTimeout(()=> {
+    this.timeOutObject = setTimeout(() => {
       this.isScrolling = false;
-      if (this.heroSectionInViewPort()){
-        this.domObjectService.showStickyButton = false;  
+      if (this.heroSectionInViewPort()) {
+        this.domObjectService.showStickyButton = false;
       } else {
-        this.domObjectService.showStickyButton = true;  
+        this.domObjectService.showStickyButton = true;
       }
     }, 800);
 
     if (this.domObjectService.showStickyButton) {
       this.domObjectService.showStickyButton = false;
     }
-  }  
-
+  }
 }

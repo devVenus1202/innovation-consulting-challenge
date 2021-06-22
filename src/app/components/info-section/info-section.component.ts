@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-section.component.scss']
 })
 export class InfoSectionComponent implements OnInit {
-  @Input() backgroundColor:string;
+  @Input() backgroundColor: string;
 
   constructor() { }
 
