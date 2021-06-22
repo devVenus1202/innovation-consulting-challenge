@@ -7,4 +7,9 @@
     &.white {
         background-color: white;
     }
+    &-content {
+        width: 100%;
+        max-width: $contentWidth;
+        margin: auto;
+    }
 }
