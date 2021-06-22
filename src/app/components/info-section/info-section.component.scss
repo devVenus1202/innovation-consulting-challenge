@@ -1,7 +1,8 @@
+@import '../../../assets/styles/variables';
 .info-section {
     height: 400px;
     &.blue {
-        background-color: blue;
+        background-color: $lightBlue;
     }
     &.white {
         background-color: white;
