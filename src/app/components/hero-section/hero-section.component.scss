@@ -1,3 +1,4 @@
+@import '../../../assets/styles/variables';
 .hero-section {
     width: 100vw;
     height: 100vh;
@@ -8,5 +9,14 @@
         max-height: 850px;
         min-height: 500px;
         object-fit: cover;
+    }
+    .insurance-panel{
+        max-width: $contentWidth;
+        background-color: white;
+        margin: auto;
+        border-radius: 10px;
+        transform: translateY(-90%);
+        text-align: center;
+        padding: 1rem;
     }
 }
