@@ -1,0 +1,9 @@
+.info-section {
+    height: 400px;
+    &.blue {
+        background-color: blue;
+    }
+    &.white {
+        background-color: white;
+    }
+}

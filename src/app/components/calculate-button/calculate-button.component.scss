@@ -1,0 +1,12 @@
+.calculate-price-button {
+    background: #45B491 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    outline: none;
+    padding: 13px 18px;
+    border: none;
+    color: white;
+    &.sticky {
+        position: sticky;
+        bottom: 50px;
+    }
+}

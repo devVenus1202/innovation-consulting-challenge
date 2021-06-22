@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { InfoSectionComponent } from './components/info-section/info-section.component';
+import { CalculateButtonComponent } from './components/calculate-button/calculate-button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     HeaderComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    InfoSectionComponent,
+    CalculateButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
