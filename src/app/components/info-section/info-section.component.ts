@@ -1,5 +1,5 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { HeroSectionComponent } from '../hero-section/hero-section.component';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-info-section',

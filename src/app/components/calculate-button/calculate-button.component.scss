@@ -6,7 +6,10 @@
     border: none;
     color: white;
     &.sticky {
-        position: sticky;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 50px;
+        padding: 15px 20px;
     }
 }
