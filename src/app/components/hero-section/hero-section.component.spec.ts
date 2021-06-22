@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { HeroSectionComponent } from './hero-section.component';
 
@@ -8,7 +9,10 @@ describe('HeroSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroSectionComponent ]
+      declarations: [ HeroSectionComponent ],
+      schemas: [ 
+        CUSTOM_ELEMENTS_SCHEMA 
+      ]
     })
     .compileComponents();
   }));
