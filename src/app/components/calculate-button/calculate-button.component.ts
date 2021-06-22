@@ -23,4 +23,7 @@ export class CalculateButtonComponent implements AfterViewInit {
   ngAfterViewInit() {
   }
   
+  handleClick(){
+    alert("Cliced button");
+  }
 }

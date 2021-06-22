@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 .d-flex {
     display: flex;
@@ -14,4 +14,15 @@ body {
 }
 .align-items-center {
     align-items: center;
+}
+
+@media(max-width: 1160px) {
+    .my-sm-1 {
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+    }
+    .py-sm-1 {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
 }

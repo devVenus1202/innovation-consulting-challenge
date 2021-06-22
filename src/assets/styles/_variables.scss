@@ -1,2 +1,6 @@
 $lightBlue: #EBEFF9;
 $contentWidth: 1160px;
+$marginSize: 0rem;
+@media(max-width: 1140px) {
+    $marginSize: 1rem;
+}

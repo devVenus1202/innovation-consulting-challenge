@@ -1,6 +1,7 @@
 <button 
     @showHide
     *ngIf="domObjectService.showStickyButton || position!=='sticky'"
+    (click)="handleClick()"
     class="calculate-price-button insert-remove-container" [ngClass]="position">
     Meinen Preis berechnen
 </button>
